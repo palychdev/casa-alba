@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Casa Alba — A house in the olive groves of Puglia</title>
+  <meta name="description" content="Nine rooms, one long table, and a pool cut into the limestone. A masseria between Ostuni and the Adriatic, open from May to October.">
+  <meta name="theme-color" content="#ffffff">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/fraunces-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta property="og:title" content="Casa Alba — A house in the olive groves of Puglia">
+  <meta property="og:description" content="Nine rooms, one long table, and a pool cut into the limestone.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Casa Alba">
+  <meta property="og:url" content="https://palychdev.github.io/casa-alba/">
+  <meta property="og:image" content="https://palychdev.github.io/casa-alba/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Casa Alba — a white house in the olive groves.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://palychdev.github.io/casa-alba/">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top" aria-label="Casa Alba, home">Casa <em>Alba</em></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#house">The house</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#table">The table</a>
+        <a href="#place">Place</a>
+      </nav>
+      <a class="header-cta" href="#enquire">Plan a stay <span class="arrow" aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu" aria-haspopup="dialog">Menu</button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="wrap menu-top">
+      <span class="wordmark">Casa <em>Alba</em></span>
+      <button class="menu-close" id="menu-close" aria-label="Close menu">Close <span aria-hidden="true">×</span></button>
+    </div>
+    <nav class="menu-nav" aria-label="Mobile">
+      <a href="#house">The house</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#table">The table</a>
+      <a href="#place">Place</a>
+      <a href="#enquire">Plan a stay</a>
+    </nav>
+    <div class="wrap menu-foot">
+      <p>Ostuni, Puglia</p>
+      <a href="#enquire">Plan a stay</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-meta"><span>Ostuni, Puglia</span><span>40.729°N · 17.578°E</span></p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="line"><span>A white house</span></span>
+            <span class="line"><span>in the <em>olive</em></span></span>
+            <span class="line"><span>groves.</span></span>
+          </h1>
+          <div class="hero-foot">
+            <p class="lede">Nine rooms, one long table, and a pool cut into the limestone. Open from May to October, six kilometres from the Adriatic.</p>
+            <a class="text-link" href="#house">The house <span class="arrow" aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <picture>
+            <source type="image/avif" srcset="assets/img/opt/hero-arch-900.avif 900w, assets/img/opt/hero-arch-1280.avif 1280w" sizes="(max-width: 860px) 100vw, 40vw">
+            <source type="image/webp" srcset="assets/img/opt/hero-arch-900.webp 900w, assets/img/opt/hero-arch-1280.webp 1280w" sizes="(max-width: 860px) 100vw, 40vw">
+            <img src="assets/img/hero-arch.jpg" alt="A narrow whitewashed street in Ostuni, lit by a street lamp" width="1280" height="2349" fetchpriority="high" decoding="async">
+          </picture>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <form class="booking" id="hero-booking" novalidate>
+          <div class="field">
+            <label for="arrive">Arrive</label>
+            <input type="date" id="arrive" name="arrive" required>
+          </div>
+          <div class="field">
+            <label for="depart">Depart</label>
+            <input type="date" id="depart" name="depart" required>
+          </div>
+          <div class="field">
+            <label for="guests">Guests</label>
+            <select id="guests" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </div>
+          <button class="btn btn--dark booking-submit" type="submit">Plan dates <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="form-status" id="booking-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section statement">
+      <div class="wrap">
+        <div class="statement-grid">
+          <h2 class="statement-title">A masseria is a farmhouse that learned to keep guests. <em>We kept the stone, the shade, and the silence.</em></h2>
+          <p class="statement-note">The house has been in the family since 1968. We restored it room by room, with masons from Ostuni and a stubborn refusal to hurry. We added better beds.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Rooms</dt><dd>9</dd></div>
+          <div><dt>Olive trees</dt><dd>14 ha</dd></div>
+          <div><dt>To the sea</dt><dd>6 km</dd></div>
+          <div><dt>The house</dt><dd>1684</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <figure class="bleed">
+      <div class="bleed-media reveal">
+        <picture>
+          <source type="image/avif" srcset="assets/img/opt/masseria-900.avif 900w, assets/img/opt/masseria-1280.avif 1280w" sizes="100vw">
+          <source type="image/webp" srcset="assets/img/opt/masseria-900.webp 900w, assets/img/opt/masseria-1280.webp 1280w" sizes="100vw">
+          <img src="assets/img/masseria.jpg" alt="A pale stone masseria across a field of poppies" width="1280" height="855" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <figcaption class="wrap bleed-caption"><span>The north field, late April.</span><span>The house is built around a courtyard you cannot see from here.</span></figcaption>
+    </figure>
+
+    <section id="house" class="section house">
+      <div class="wrap house-grid">
+        <figure class="house-media reveal">
+          <picture>
+            <source type="image/avif" srcset="assets/img/opt/house-interior-900.avif 900w, assets/img/opt/house-interior-1600.avif 1600w" sizes="(max-width: 860px) 100vw, 50vw">
+            <source type="image/webp" srcset="assets/img/opt/house-interior-900.webp 900w, assets/img/opt/house-interior-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw">
+            <img src="assets/img/house-interior.jpg" alt="A bright living room with lime-washed walls and oak furniture" width="2000" height="1333" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+        <div class="house-copy">
+          <h2>The house</h2>
+          <p class="body-large">Limestone, oak, lime plaster. Nine rooms open onto the courtyard; none has a television.</p>
+          <p>There is a long table under the fig tree, a pool the colour of the sky at noon, and a kitchen that smells of bread by seven. The rest of the house is for reading, sleeping, and walking to the sea.</p>
+          <dl class="spec">
+            <div><dt>Rooms</dt><dd>Nine, three suites</dd></div>
+            <div><dt>Grounds</dt><dd>Fourteen hectares of olives</dd></div>
+            <div><dt>Pool</dt><dd>Eighteen metres, unheated</dd></div>
+            <div><dt>Season</dt><dd>May to October</dd></div>
+          </dl>
+          <a class="text-link" href="#rooms">The rooms <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="rooms" class="section rooms">
+      <div class="wrap rooms-grid">
+        <div class="rooms-intro">
+          <h2>Nine rooms,<br>no two alike.</h2>
+          <p>Each room has a bed made in Puglia, linen from the next valley, and a window that opens. The rest is a choice between garden, courtyard, or sea.</p>
+        </div>
+        <figure class="rooms-media reveal">
+          <picture>
+            <source type="image/avif" srcset="assets/img/opt/room-900.avif 900w, assets/img/opt/room-1600.avif 1600w" sizes="(max-width: 860px) 100vw, 48vw">
+            <source type="image/webp" srcset="assets/img/opt/room-900.webp 900w, assets/img/opt/room-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw">
+            <img src="assets/img/room.jpg" alt="A bedroom with linen sheets and morning light" width="2000" height="1333" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+        <ol class="room-list">
+          <li>
+            <a class="room-row" href="#enquire">
+              <span class="room-num">01</span>
+              <span class="room-main"><span class="room-name">Olivo</span><span class="room-desc">Garden room · 28 m² · King bed, walk-in shower</span></span>
+              <span class="room-price">From €260</span>
+              <span class="room-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="room-row" href="#enquire">
+              <span class="room-num">02</span>
+              <span class="room-main"><span class="room-name">Corte</span><span class="room-desc">Courtyard suite · 34 m² · King bed, bath, private terrace</span></span>
+              <span class="room-price">From €320</span>
+              <span class="room-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="room-row" href="#enquire">
+              <span class="room-num">03</span>
+              <span class="room-main"><span class="room-name">Mare</span><span class="room-desc">Terrace suite · 42 m² · King bed, bath, sea view</span></span>
+              <span class="room-price">From €420</span>
+              <span class="room-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ol>
+        <p class="rooms-note">Rates include breakfast, a jar of our oil, and the use of the pool. Three-night minimum. The other six rooms are available; <a href="#enquire">plan a stay</a>.</p>
+      </div>
+    </section>
+
+    <section id="table" class="table-section" aria-labelledby="table-title">
+      <div class="table-grid">
+        <figure class="table-media reveal">
+          <picture>
+            <source type="image/avif" srcset="assets/img/opt/table-terrace-900.avif 900w, assets/img/opt/table-terrace-1600.avif 1600w" sizes="(max-width: 860px) 100vw, 50vw">
+            <source type="image/webp" srcset="assets/img/opt/table-terrace-900.webp 900w, assets/img/opt/table-terrace-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw">
+            <img src="assets/img/table-terrace.jpg" alt="A terrace set for dinner above the sea" width="2000" height="1500" loading="lazy" decoding="async">
+          </picture>
+        </figure>
+        <div class="table-copy">
+          <h2 id="table-title">One table,<br>at seven.</h2>
+          <p>Breakfast is bread, oil, tomatoes, and coffee. Lunch is whatever the garden gives. Dinner is one seating, at seven, on the terrace—or under the fig tree when the wind picks up.</p>
+          <ul class="dinner-menu">
+            <li><span>Bread, oil, tomatoes</span><span>Every morning</span></li>
+            <li><span>Orecchiette, turnip tops, anchovy</span><span>Tuesday</span></li>
+            <li><span>Sea bream, lemon, wild fennel</span><span>Friday</span></li>
+            <li><span>Fig leaf ice cream</span><span>When the figs are ripe</span></li>
+          </ul>
+          <p class="table-price">Dinner, €65 per person. Wine from the cellar, at cost.</p>
+          <p class="note">The menu changes with the market. Tell us what you don't eat; Anna will cook around it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="place" class="section place">
+      <div class="wrap">
+        <div class="place-head">
+          <h2>Between the trulli<br>and the sea.</h2>
+          <p>The house sits on the old road between Ostuni and the coast. The nearest beach is six kilometres away; the nearest espresso is eight minutes on foot.</p>
+        </div>
+        <div class="place-grid">
+          <figure class="place-a reveal">
+            <picture>
+              <source type="image/avif" srcset="assets/img/opt/coast-900.avif 900w, assets/img/opt/coast-1600.avif 1600w" sizes="(max-width: 860px) 100vw, 58vw">
+              <source type="image/webp" srcset="assets/img/opt/coast-900.webp 900w, assets/img/opt/coast-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 58vw">
+              <img src="assets/img/coast.jpg" alt="Limestone cliffs above the Adriatic" width="2400" height="1600" loading="lazy" decoding="async">
+            </picture>
+            <figcaption>The Adriatic, from the Gagliano cliffs.</figcaption>
+          </figure>
+          <figure class="place-b reveal">
+            <picture>
+              <source type="image/avif" srcset="assets/img/opt/ostuni-street-900.avif 900w, assets/img/opt/ostuni-street-1600.avif 1600w" sizes="(max-width: 860px) 100vw, 34vw">
+              <source type="image/webp" srcset="assets/img/opt/ostuni-street-900.webp 900w, assets/img/opt/ostuni-street-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 34vw">
+              <img src="assets/img/ostuni-street.jpg" alt="A whitewashed street in Ostuni" width="2400" height="1994" loading="lazy" decoding="async">
+            </picture>
+            <figcaption>Ostuni, eight kilometres north.</figcaption>
+          </figure>
+        </div>
+        <dl class="distances">
+          <div><dt>Ostuni</dt><dd>8 km</dd></div>
+          <div><dt>Torre Sant'Andrea</dt><dd>22 km</dd></div>
+          <div><dt>Brindisi airport</dt><dd>38 km</dd></div>
+          <div><dt>Lecce</dt><dd>62 km</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="enquire" class="enquire">
+      <div class="wrap enquire-grid">
+        <div class="enquire-copy">
+          <h2>Come for a week.<br><em>Leave with a jar of oil.</em></h2>
+          <p>Tell us when you'd like to come. The planner below keeps the dates together; nothing leaves this page.</p>
+          <address>
+            <span>Casa Alba</span>
+            <span>Contrada Santa Maria 12</span>
+            <span>72017 Ostuni (BR), Puglia</span>
+            <span>May–October</span>
+          </address>
+          <p class="enquire-note">This is a design study. There is no booking engine, and no request is sent.</p>
+        </div>
+
+        <form class="enquire-form" id="enquire-form" novalidate>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required>
+            <p class="field-error" id="name-error" hidden>Please tell us your name.</p>
+          </div>
+          <div class="form-field">
+            <label for="arrive-2">Arrive</label>
+            <input type="date" id="arrive-2" name="arrive" aria-describedby="arrive-2-error" required>
+            <p class="field-error" id="arrive-2-error" hidden>Choose a date from today onward.</p>
+          </div>
+          <div class="form-field">
+            <label for="depart-2">Depart</label>
+            <input type="date" id="depart-2" name="depart" aria-describedby="depart-2-error" required>
+            <p class="field-error" id="depart-2-error" hidden>Departure must be after arrival.</p>
+          </div>
+          <div class="form-field">
+            <label for="guests-2">Guests</label>
+            <select id="guests-2" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2" selected>2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+              <option value="5">5 guests</option>
+              <option value="6">6 guests</option>
+            </select>
+          </div>
+          <div class="form-field form-field--wide">
+            <label for="message">Anything we should know?</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn--light" type="submit">Review dates <span class="arrow" aria-hidden="true">→</span></button>
+            <p class="form-note">Nothing is sent. This is a design study.</p>
+          </div>
+          <p class="form-status" id="enquire-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="wordmark wordmark--big" href="#top">Casa <em>Alba</em></a>
+          <p>A masseria in the olive groves between Ostuni and the Adriatic.</p>
+        </div>
+        <nav class="footer-col" aria-label="Stay">
+          <h3>Stay</h3>
+          <a href="#rooms">Rooms</a>
+          <a href="#table">The table</a>
+          <a href="#enquire">Plan a stay</a>
+        </nav>
+        <nav class="footer-col" aria-label="House">
+          <h3>House</h3>
+          <a href="#house">The house</a>
+          <a href="#place">Place</a>
+          <a href="credits.html">Credits</a>
+        </nav>
+        <div class="footer-col">
+          <h3>Visit</h3>
+          <span>Ostuni, Puglia</span>
+          <span>May–October</span>
+          <a href="#place">How to find us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Casa Alba. A design study.</p>
+        <p><a href="credits.html">Photography &amp; credits</a></p>
+        <p>Local time <span id="local-time">—</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
