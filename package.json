@@ -1,0 +1,18 @@
+{
+  "name": "casa-alba",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An editorial landing page for a fictional masseria in Puglia.",
+  "author": "palychdev",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "images": "node scripts/images.mjs",
+    "avif": "node scripts/avif.mjs",
+    "og": "node scripts/og.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1",
+    "sharp": "^0.35.5"
+  }
+}

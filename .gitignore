@@ -1,0 +1,8 @@
+node_modules/
+_shots/
+_candidates/
+_candidates2/
+_commons*
+_selects.jpg
+.DS_Store
+Thumbs.db
