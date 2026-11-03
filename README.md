@@ -2,6 +2,8 @@
 
 An editorial landing page for a fictional nine-room masseria in the olive groves between Ostuni and the Adriatic.
 
+[**Live site →**](https://palychdev.github.io/casa-alba/)
+
 ![Casa Alba — a white house in the olive groves](assets/og.jpg)
 
 ## What this is
