@@ -2,8 +2,6 @@
 
 An editorial landing page for a fictional nine-room masseria in the olive groves between Ostuni and the Adriatic.
 
-[**View the live site →**](https://palychdev.github.io/casa-alba/)
-
 ![Casa Alba — a white house in the olive groves](assets/og.jpg)
 
 ## What this is
@@ -53,7 +51,7 @@ npm run og       # rebuild assets/og.jpg
 
 ## Credits
 
-Photography and type are credited on the [credits page](https://palychdev.github.io/casa-alba/credits.html). The Wikimedia Commons photographs are used under CC BY-SA 3.0 or 4.0. The three Unsplash photographs are used under the Unsplash License. Fraunces and Instrument Sans are licensed under the SIL Open Font License; the license texts are in `assets/fonts/`.
+Photography and type are credited on the [credits page](credits.html). The Wikimedia Commons photographs are used under CC BY-SA 3.0 or 4.0. The three Unsplash photographs are used under the Unsplash License. Fraunces and Instrument Sans are licensed under the SIL Open Font License; the license texts are in `assets/fonts/`.
 
 ## License
 
